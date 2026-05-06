@@ -1,0 +1,17 @@
+{
+  "name": "teachhub-saas",
+  "version": "1.0.0",
+  "description": "Complete education SaaS platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["education", "saas", "teacher", "grading"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
