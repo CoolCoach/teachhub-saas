@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
-    "build": "cd server && npm run build && cd ../client && npm run build",
+    "build": "cd client && npm run build",
     "start": "cd server && npm start"
   },
   "keywords": ["education", "saas", "teacher", "grading"],
