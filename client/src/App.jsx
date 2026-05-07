@@ -123,7 +123,7 @@ function App() {
           </form>
           <p className="toggle-auth">
             {isRegister ? 'Already have an account? ' : "Don't have an account? "}
-            <a onClick={() => setIsRegister(!isRegister)}>{isRegister ? 'Sign In' : 'Create Account'}</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setIsRegister(!isRegister); }}>{isRegister ? 'Sign In' : 'Create Account'}</a>
           </p>
         </div>
       </div>
